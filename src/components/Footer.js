@@ -6,7 +6,7 @@ const Footer = () => {
       <a
         href="https://www.linkedin.com/in/vivekanand-vernekar/"
         target="_blank"
-        title="vivekanand's github"
+        title="vivekanand's linkedin"
       >
       Vivekanand Vernakar
       </a>

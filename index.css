@@ -51,8 +51,9 @@ a {
   width: 100vw;
   height: 80px;
   background-color: var(--header-bg-color);
+  border: 1px solid;
+  box-shadow: 5px 5px 5px gray;
   border-radius: 5px;
-  box-shadow: -2px 7px 5px -6px rgba(0, 0, 0, 0.61);
   color: var(--light-text-color);
   font-family: "Poppins", sans-serif;
   font-weight:600;
@@ -64,26 +65,31 @@ a {
 }
 
 .logo {
-  padding: 10px 0 10px 15px;
-  width: 90px;
+  padding: 12px 0 10px 15px;
+  width: 100px;
 }
 
 .user-name {
+  padding-left: 10%;
   color: var(--dark-green);
+  font-size: 20px;
+  font-family: "Poppins", sans-serif;
 }
 
 /* nav items CSS start*/
 .nav-items > ul {
   list-style-type: none;
   display: flex;
+
   margin-right: 30px;
   align-items: center;
   justify-content: space-between;
   font-family: "Poppins", sans-serif;
+  font-size: 20px;
 }
 
 .nav-items > ul > li {
-  padding: 10px;
+  padding: 12px;
 }
 
 .nav-items > ul > li .fa-solid {
@@ -123,7 +129,6 @@ a {
   color: var(--x-dark-orange);
 }
 /* nav items CSS End*/
-
 /* Header CSS End*/
 
 /* Body CSS Start*/
@@ -133,7 +138,7 @@ a {
 
 /* search container CSS Start*/
 .search-container {
-  margin: 100px auto 20px;
+  margin: 120px auto 20px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -141,7 +146,7 @@ a {
 }
 
 .search-container .search-input {
-  width: 30rem;
+  width: 40rem;
   font-family: "Poppins", sans-serif;
   box-sizing: border-box;
   border-bottom-left-radius: 5px;
@@ -149,12 +154,12 @@ a {
   background-color: #ffffff;
   box-shadow: 1px 2px 4px 0 rgba(0, 0, 0, 0.08);
   padding: 8px 15px 8px 12px;
-  border: 1px solid #aabcca;
+  border: 1px solid grey;
   border-right: 0;
   color: var(--text-color);
   outline: none;
   font-size: large;
-  font-weight: 300;
+  font-weight: 400;
 }
 
 .search-container .search-input:focus {
@@ -167,8 +172,8 @@ a {
 
 .search-container .search-btn {
   font-family: "Poppins", sans-serif;
-  font:500;
-
+  font:600;
+  font-size: 16px;
   border-bottom-right-radius: 5px;
   border-top-right-radius: 5px;
   background-color: #ff2400;
@@ -206,7 +211,7 @@ a {
 }
 
 .card {
-  width: 240px;
+  width: 250px;
   border-radius: 5px;
   font-family: "Poppins", sans-serif;
   box-shadow: -1px 5px 10px 5px rgba(112, 112, 112, 0.2);
@@ -216,7 +221,7 @@ a {
 }
 
 .card:hover {
-  transform: scale(1.03);
+  transform: scale(1.05);
 }
 
 .card h3 {
@@ -225,7 +230,7 @@ a {
 
 .card > img {
   width: 100%;
-  border-radius: 10px;
+  border-radius: 15px;
 }
 
 .card > h5 {
@@ -304,7 +309,7 @@ a {
   white-space: nowrap;
   color: inherit;
   opacity: 0.7;
-  font-size: 15px;
+  font-size: 16px;
   max-width: 540px;
 }
 
@@ -394,7 +399,7 @@ a {
 
 .item-cost {
   margin-top: 4px;
-  font-size: 1rem;
+  font-size: 20px;
   font-weight: 400;
   color: #3e4152;
   width: inherit;
@@ -412,13 +417,13 @@ a {
 
 .menu-item-img {
   height: 100px;
-  width: 100px;
+  width: 130px;
   border-radius: 5px;
 }
 
 .add-btn {
   background-color: #ff2400;
-
+ font-size: 16px;
   color: white;
   padding: 8px 25px;
   cursor: pointer;
@@ -981,7 +986,7 @@ a {
   font-family: "Poppins", sans-serif;
   text-transform: uppercase;
   outline: 0;
-  background: #ffbaba;
+  background: #7393B3;
   width: 100%;
   border: 0;
   border-radius: 5px;

@@ -9,33 +9,22 @@ import { useEffect } from "react";
 // Title component for display logo
 const Title = () => (
   <Link to="/">
-    <img
-      className="logo"
-      src={logo}
-      alt="SnackDash"
-      title="SnackDash"
-    />
+    <img className="logo" src={logo} alt="SnackDash" />
   </Link>
 );
 
-// Header component for header section: Logo, Nav Items
-const Header = () => {
+const Header = () => 
+{
   const navigate = useNavigate();
-
-  // call custom hook useLocalStorage for getting localStorage value of user
   const [getLocalStorage, , clearLocalStorage] = useLocalStorage("user");
-
-  // call custom hook useAuth for user is loggedin or not
   const [isLoggedin, setIsLoggedin] = useAuth();
 
   useEffect(() => {
-    // if value of getLocalStorage is equal to null setIsLoggedin to false
     if (getLocalStorage === null) {
       setIsLoggedin(false);
     }
   }, [getLocalStorage])
 
-  // call custom hook useOnline if user is online or not
   const isOnline = useOnline();
 
   return (
@@ -43,23 +32,14 @@ const Header = () => {
       <Title />
 
       {/* if user is logged in then display userName */}
-      {isLoggedin && <div className="user-name">Hi {getLocalStorage?.userName}!</div>}
+      {isLoggedin && <div className="user-name">Hi {getLocalStorage?.userName} ! what would you like to order today ?</div>}
 
       <div className="nav-items">
         <ul>
-          <li>
-            <Link to="/">Home</Link>
-          </li>
-          <li>
-            <Link to="/about">About</Link>
-          </li>
-
-          <li>
-            <Link to="/contact">Contact</Link>
-          </li>
-          <li>
-            <i className="fa-solid fa-cart-shopping"></i>
-          </li>
+          <li> <Link to="/">Home</Link> </li>
+          <li> <Link to="/about">About</Link> </li>
+          <li> <Link to="/contact">Contact</Link> </li>
+          <li> <i className="fa-solid fa-cart-shopping"></i> </li>
           <li>
             {/* use conditional rendering for login and logout */}
             {isLoggedin ? (

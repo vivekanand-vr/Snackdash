@@ -1,7 +1,7 @@
 import RestaurantCard from "./RestaurantCard";
 import { useState } from "react"; /* This is named export */
 import Shimmer from "./Shimmer"; /* This is default export */
-import { swiggy_api_URL } from "../constants";
+import { swiggy_api_URL } from "../../constants";
 import { Link } from "react-router-dom";
 import { filterData } from "../utils/Helper"; // For reusability or readability filterData function is added in Helper.js file of Utils folder
 import useResData from "../hooks/useResData"; // imported custom hook useResData which gives All Restaurant and  Filtered Restaurant data from swigy api

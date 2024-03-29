@@ -5,7 +5,7 @@ import {
   ITEM_IMG_CDN_URL,
   MENU_ITEM_TYPE_KEY,
   RESTAURANT_TYPE_KEY,
-} from "../constants";
+} from "../../constants";
 import { MenuShimmer } from "./Shimmer";
 import useResMenuData from "../hooks/useResMenuData"; // imported custom hook useResMenuData which gives restaurant Menu data from swigy api
 import useOnline from "../hooks/useOnline"; // imported custom hook useOnline which checks user is online or not
