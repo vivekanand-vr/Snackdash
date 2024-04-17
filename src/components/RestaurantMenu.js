@@ -91,7 +91,7 @@ const RestaurantMenu = () => {
                       alt={item?.name}
                     />
                   )}
-                  <button className="add-btn"> ADD +</button>
+                  <button className="add-btn"> ADD </button>
                 </div>
               </div>
             ))}
