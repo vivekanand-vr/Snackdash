@@ -33,7 +33,7 @@ const Body = () => {
         <Shimmer />
       ) : (
         <div className="container">
-          <div className="grid grid-cols-4 gap-6">
+          <div className="grid grid-cols-5 gap-5">
             {restaurants?.map((restaurant) => (
               <Link
                 to={"/restaurant-menu/" + restaurant?.info?.id}
