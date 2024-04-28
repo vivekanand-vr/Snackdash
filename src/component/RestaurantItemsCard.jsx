@@ -9,7 +9,7 @@ const RestaurantItemsCard = ({ data }) => {
     dispatch(addToCart(data?.card?.info));
   };
   return (
-    <div className="flex justify-between items-center relative">
+    <div className="flex justify-between items-center relative transform transition-transform hover:scale-105">
       <div className="py-4 px-2 my-4 border-gray-300 border-b-2 w-9/12">
         <div className="font-[poppins]">
           <h1 className="font-bold text-base">{name}</h1>

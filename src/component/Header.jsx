@@ -9,7 +9,7 @@ const Header = () => {
 
   return (
     <header
-      className={`bg-white text-black px-4 py-6 h-24 shadow-md bg-fixed ${
+      className={`bg-white text-black px-4 py-3 h-20 shadow-md bg-fixed ${
         !isOnline ? "pointer-events-none" : ""
       }`}
     >

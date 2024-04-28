@@ -18,7 +18,7 @@ const SignIn = () => {
         .min(8, "Password must be at least 8 characters")
         .matches(
           /^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])[0-9a-zA-Z]{8,}$/,
-          "Password must contain at least one number, one uppercase and one lowercase letter"
+          "Password must contain at least one number, one uppercase and one lowercase letter, also no symbols"
         ),
     }),
     onSubmit: (values) => {
@@ -41,7 +41,7 @@ const SignIn = () => {
             Sign In to Your Account
           </p>
           <p className="font-normal font-[Poppins]">
-            Let's get you signed in and straight to the icons.
+            Order your favorite meals right away.
           </p>
         </div>
 
@@ -56,9 +56,9 @@ const SignIn = () => {
                 id="email"
                 {...formik.getFieldProps("email")}
                 className="border-2 border-gray-500 py-3  w-full rounded-xl pl-14"
-                placeholder="work.ashish.gaikwad@gmail.com"
+                placeholder="yourName@gmail.com"
               />
-              <i className="fa-regular  text-lg font-bold fa-envelope absolute left-3 top-9 px-4"></i>
+              <i className="fa-regular  text-lg font-bold fa-envelope absolute left-3 top-10 px-4"></i>
               {formik.errors.email && formik.touched.email ? (
                 <div className="text-red-500 ml-2">{formik.errors.email}</div>
               ) : null}
@@ -78,7 +78,7 @@ const SignIn = () => {
                 className="border-2 border-gray-500 py-3  w-full rounded-xl pl-14"
                 placeholder="password"
               />
-              <i className="fa-solid fa-lock absolute top-9 left-3 px-4 text-lg font-bold"></i>
+              <i className="fa-solid fa-lock absolute top-10 left-3 px-4 text-lg font-bold"></i>
               {formik.errors.password && formik.touched.password ? (
                 <div className="ml-2 text-red-500">
                   {formik.errors.password}
