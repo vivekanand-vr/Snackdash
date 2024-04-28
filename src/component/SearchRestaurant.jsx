@@ -16,17 +16,15 @@ const SearchRestaurant = ({ handleFilter, filterRes }) => {
   };
 
   return (
-    <div className="items-center border-2  py-3 px-6 flex">
+    <div className="my-120 mx-auto flex justify-center items-center w-full">
       <input
         type="search"
-        placeholder="Search for restaurant"
-        className=" outline-none w-full font-semibold"
+        placeholder="Search restaurants"
+        className="w-[40rem] box-border rounded-l-lg bg-white shadow-md px-12 py-4 border border-gray-600 border-r-0 text-xl font-normal text-black"
         onChange={handleInputChange}
       />
-      <i
-        className="fa-solid fa-magnifying-glass cursor-pointer"
-        onClick={handleSearchSubmit}
-      ></i>
+      <button className="text-[20px] font-semibold text-base bg-orange-600 rounded-r-lg shadow-md text-white px-6 py-5 ml-[-4px] cursor-pointer border-none outline-none"
+       onClick={handleSearchSubmit}> Search </button>
     </div>
   );
 };

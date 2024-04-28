@@ -9,6 +9,7 @@ import DeliveryAndPayment from "./component/DeliveryAndPayment.jsx";
 import RestaurantMenu from "./component/RestaurantMenu.jsx";
 import "./App.css";
 import Cart from "./component/Cart.jsx";
+import About from "./component/About.js";
 import { Provider } from "react-redux";
 import appStore from "./store/appStore.js";
 
@@ -34,6 +35,10 @@ const appRouter = createBrowserRouter([
       {
         path: "/delivery-payments",
         element: <DeliveryAndPayment />,
+      },
+      {
+        path: "/about-us",
+        element: <About />
       },
       {
         path: "/restaurant-menu/:resId",
