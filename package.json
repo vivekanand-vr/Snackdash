@@ -1,7 +1,7 @@
 {
   "name": "namaste-react",
   "version": "1.0.0",
-  "description": "This is a live Course",
+  "description": "This is a swiggy clone made using react js and other libraries",
   "scripts": {
     "start": "parcel public/index.html",
     "build": "parcel build public/index.html",
@@ -9,14 +9,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/chetannada/Namaste-React.git"
+    "url": "https://github.com/vivekanand-vr/snackdash"
   },
-  "author": "Chetan Nada",
+  "author": "Vivekanand Vernekar",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/chetannada/Namaste-React/issues"
+    "url": "https://github.com/vivekanand-vr/snackdash/issues"
   },
-  "homepage": "https://github.com/chetannada/Namaste-React#readme",
+  "homepage": "https://github.com/vivekanand-vr/snackdash#readme",
   "devDependencies": {
     "autoprefixer": "^10.4.19",
     "parcel": "^2.8.2",
