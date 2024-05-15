@@ -1,7 +1,7 @@
 {
-  "name": "namaste-react",
+  "name": "SnackDash",
   "version": "1.0.0",
-  "description": "This is a swiggy clone made using react js and other libraries",
+  "description": "Food ordering application inspired by the popular Swiggy application",
   "scripts": {
     "start": "parcel public/index.html",
     "build": "parcel build public/index.html",

@@ -17,7 +17,7 @@ const Body = () => {
 
   return (
     <div
-      className={`container bg-[#fffefe] mx-auto  w-[80%] my-10 ${
+      className={`container bg-amber-50 mx-auto my-10 ${
         !isOnline ? "pointer-events-none" : ""
       }`}
     >
@@ -33,7 +33,7 @@ const Body = () => {
         <Shimmer />
       ) : (
         <div className="container">
-          <div className="grid grid-cols-5 gap-5">
+          <div className="w-full flex flex-wrap p-5 gap-8">
             {restaurants?.map((restaurant) => (
               <Link
                 to={"/restaurant-menu/" + restaurant?.info?.id}

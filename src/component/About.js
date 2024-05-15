@@ -15,10 +15,7 @@ const About = () => {
               meal"
             </h4>
         </div>
-
-        <div className="flex flex-wrap flex-col justify-center items-center overflow-hidden">
-          <img className="w-500" src={burger} alt="Food Image" />
-        </div>
+        <img src={burger} alt="Burger Image" />
         
       </div>
     </div>

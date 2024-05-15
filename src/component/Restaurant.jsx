@@ -3,7 +3,7 @@ import { RESTAURANT_IMG } from "../utils/constants";
 const Restaurant = ({ resData }) => {
   const { name, cloudinaryImageId, avgRating, sla, cuisines } = resData?.info;
   return (
-    <div className="w-56 h-80 shadow-xl py-2  cursor-pointer rounded-lg transform transition-transform hover:scale-110">
+    <div className="w-64 h-80 shadow-xl py-2 px-2 bg-orange-100  cursor-pointer rounded-lg transform transition-transform hover:scale-110">
       <img
         className="w-full h-1/2 object-cover rounded-xl"
         src={RESTAURANT_IMG + cloudinaryImageId}
