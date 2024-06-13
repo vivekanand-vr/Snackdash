@@ -1,6 +1,6 @@
 # Snack Dash - A food ordering platform
 
-#### Technologies Used: Tailwind CSS, Formik, Redux Toolkit, React JS 
+- #### Technologies Used: Tailwind CSS, Redux Toolkit, React JS 
 
 ## Overview 
 * A food delivery application using React and Tailwind CSS inspired by the functionality of the popular Swiggy app.
@@ -8,7 +8,8 @@
 * Incorporated Redux for efficient state management, enhancing the application's scalability and performance.
 * Implemented essential features such as login functionality, add items to cart, search restruants and many more functionalities to come.
 
-## Snapshot
+### Snapshot of Home Page
 <div align="center">
-  <img src="https://github.com/vivekanand-vr/Snackdash/assets/116813193/32812296-e775-48f5-8283-40f5beb43fd1"/> 
+  <img src="https://github.com/vivekanand-vr/Snackdash/assets/116813193/e6b6bc89-7d39-4bb4-8bca-9361a8a560f6"/> 
 </div>
+
