@@ -1,20 +1,20 @@
 import React, { lazy, Suspense } from "react";
 import ReactDOM from "react-dom/client";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
-import App from "./App.jsx";
-import "./index.css";
-import Body from "./component/Body.jsx";
-import DeliveryAndPayment from "./component/DeliveryAndPayment.jsx";
-
-import RestaurantMenu from "./component/RestaurantMenu.jsx";
-import "./App.css";
-import Cart from "./component/Cart.jsx";
-import About from "./component/About.js";
 import { Provider } from "react-redux";
-import appStore from "./store/appStore.js";
 
-// on Demand Loading
-const SignIn = lazy(() => import("./component/SignIn.jsx"));
+import App from "./App.jsx";
+import Body from "./pages/Body.jsx";
+import Cart from "./pages/Cart.jsx";
+import About from "./pages/About.js";
+import RestaurantMenu from "./pages/RestaurantMenu.jsx";
+import DeliveryAndPayment from './pages/DeliveryAndPayment.jsx';
+
+import appStore from './Redux/appStore.js';
+import "./index.css";
+
+// On demand Loading
+const SignIn = lazy(() => import("./pages/SignIn.jsx"));
 const appRouter = createBrowserRouter([
   {
     path: "/",

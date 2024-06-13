@@ -1,17 +1,17 @@
-import Restaurant from "./Restaurant";
-import SearchRestaurant from "./SearchRestaurant";
-import Shimmer from "./Shimmer";
+import RestaurantCard from "../component/RestaurantCard";
+import SearchRestaurant from "../component/SearchRestaurant";
+import Shimmer from "../component/Shimmer";
 import { Link } from "react-router-dom";
 import useRestaurantAndFilter from "../hooks/useRestaurantAndFilter";
-import InternetConnection from "./InternetConeection";
+import InternetConnection from "../component/InternetConeection";
 import useIsOnline from "../hooks/useIsOnline";
-import withRestaurantOffer from "./hoc/withRestuarntOffer";
+import withRestaurantOffer from "../component/hoc/withRestuarntOffer";
 
 const Body = () => {
   const { restaurants, filterRestaurant, setRestaurants } =
     useRestaurantAndFilter();
   const isOnline = useIsOnline();
-  const RestaurantWithOffer = withRestaurantOffer(Restaurant);
+  const RestaurantWithOffer = withRestaurantOffer(RestaurantCard);
 
   console.log(restaurants);
 
@@ -42,7 +42,7 @@ const Body = () => {
                 {restaurant?.info?.aggregatedDiscountInfoV3 ? (
                   <RestaurantWithOffer resData={restaurant} />
                 ) : (
-                  <Restaurant resData={restaurant} />
+                  <RestaurantCard resData={restaurant} />
                 )}
               </Link>
             ))}

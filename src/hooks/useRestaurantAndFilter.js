@@ -1,5 +1,5 @@
 import { useState, useEffect } from "react";
-import { API_RESTAURANTS } from "../utils/constants";
+import { API_RESTAURANTS } from "../services/Endpoints";
 
 const useRestaurantAndFilter = () => {
   const [restaurants, setRestaurants] = useState([]);

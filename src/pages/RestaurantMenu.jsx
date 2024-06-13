@@ -1,9 +1,8 @@
-import Shimmer from "./Shimmer";
 import { useParams } from "react-router-dom";
 import useRestaurantMenu from "../hooks/useRestaurantMenu";
-import { DELIVERY_ICON } from "../utils/constants";
+import { DELIVERY_ICON } from "../services/Endpoints";
 import RestaurantItems from "./RestaurantItems";
-import ShimmerRestaurant from "./ShimmerResturant";
+import ShimmerRestaurant from "../component/ShimmerResturant";
 
 const RestaurantMenu = () => {
   const { resId } = useParams();

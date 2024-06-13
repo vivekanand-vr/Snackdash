@@ -9,7 +9,7 @@ const Header = () => {
 
   return (
     <header
-      className={`border-2 border-b-cyan-900 bg-cyan-100 text-black px-4 py-2  bg-fixed ${
+      className={`border-2 border-b-cyan-700 bg-cyan-100 text-black px-4 py-2  bg-fixed ${
         !isOnline ? "pointer-events-none" : ""
       }`}
     >
@@ -20,23 +20,23 @@ const Header = () => {
               <span className="ml-2 font-bold text-rose-800 text-3xl text-">SnackDash</span>
           </div>
         </Link>
-        <h1 className="text-xl text-black text-center flex-grow">
+        <h1 className="text-xl font-semibold text-black text-center flex-grow">
           Hey there! Order your favorite food now.
         </h1>
         <nav className="flex items-center">
           <ul className="flex space-x-8 text-lg">
-            <li className="hover:text-gray-300 font-[poppies]">
+            <li className="font-sans">
               <Link to="/about-us">
                 <span className="ml-2 font-semibold">About Us</span>
               </Link>
             </li>
-            <li className="hover:text-gray-300 font-[poppies]">
+            <li className="font-sans">
               <Link to="/cart">
                 <i className="fa-solid fa-cart-shopping"></i>
                 <span className="ml-2 font-semibold">Cart ({cartItems?.length})</span>
               </Link>
             </li>
-            <li className="hover:text-gray-300 font-[poppies]">
+            <li className="font-sans">
               <Link to="/sign-in">
                 <span className="ml-2 font-semibold">Sign In</span>
               </Link>

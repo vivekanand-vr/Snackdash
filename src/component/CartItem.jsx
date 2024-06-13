@@ -1,5 +1,5 @@
-import { removeFromCart } from "../feature/cartSlice";
-import { RESTAURANT_IMG } from "../utils/constants";
+import { removeFromCart } from "../Redux/Slices/cartSlice";
+import { RESTAURANT_IMG } from "../services/Endpoints";
 import { useDispatch } from "react-redux";
 
 const CartItem = ({ data }) => {

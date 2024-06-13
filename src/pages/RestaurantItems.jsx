@@ -1,5 +1,5 @@
 import { useState } from "react";
-import RestaurantItemsCard from "./RestaurantItemsCard";
+import MenuItemCard from "../component/MenuItemCard";
 import downIcon from "../assets/icons/arrow-down.png";
 import upIcon from "../assets/icons/arrow-up.png";
 
@@ -25,7 +25,7 @@ const RestaurantItems = ({ data }) => {
         {showItems && (
           <div>
             {itemCards.map((item) => (
-              <RestaurantItemsCard data={item} key={item?.card?.info?.id} />
+              <MenuItemCard data={item} key={item?.card?.info?.id} />
             ))}
           </div>
         )}

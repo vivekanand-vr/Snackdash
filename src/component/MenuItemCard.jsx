@@ -1,15 +1,15 @@
 import { useDispatch } from "react-redux";
-import { RESTAURANT_IMG } from "../utils/constants";
-import { addToCart } from "../feature/cartSlice";
+import { RESTAURANT_IMG } from "../services/Endpoints";
+import { addToCart } from "../Redux/Slices/cartSlice";
 
-const RestaurantItemsCard = ({ data }) => {
+const MenuItemCard = ({ data }) => {
   const { name, price, description, imageId, defaultPrice } = data?.card?.info;
   const dispatch = useDispatch();
   const handleAdd = () => {
     dispatch(addToCart(data?.card?.info));
   };
   return (
-    <div className="flex justify-between items-center relative transform transition-transform hover:scale-105">
+    <div className="flex justify-between items-center relative">
       <div className="py-4 px-2 my-4 border-gray-300 border-b-2 w-9/12">
         <div className="font-[poppins]">
           <h1 className="font-bold text-base">{name}</h1>
@@ -17,7 +17,7 @@ const RestaurantItemsCard = ({ data }) => {
           <span className="font-light text-sm">{description}</span>
         </div>
           <button
-            className="absolute bottom-0 right-0 px-6 py-1 bg-white border border-black font-poppins font-extrabold rounded-md hover:bg-gray-300 text-green-600"
+            className="absolute bottom-0 right-0 px-6 py-1 bg-white border border-black font-poppins font-extrabold rounded-md hover:bg-black hover:text-white text-green-700"
             onClick={handleAdd}>
             Add
           </button>
@@ -27,4 +27,4 @@ const RestaurantItemsCard = ({ data }) => {
   );
 };
 
-export default RestaurantItemsCard;
+export default MenuItemCard;
