@@ -10,7 +10,7 @@ import About from "./pages/About.js";
 import RestaurantMenu from "./pages/RestaurantMenu.jsx";
 import DeliveryAndPayment from './pages/DeliveryAndPayment.jsx';
 
-import appStore from './Redux/appStore.js';
+import appStore from './redux/appStore.js';
 import "./index.css";
 
 // On demand Loading

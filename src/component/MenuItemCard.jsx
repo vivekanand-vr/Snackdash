@@ -1,6 +1,6 @@
 import { useDispatch } from "react-redux";
 import { RESTAURANT_IMG } from "../services/Endpoints";
-import { addToCart } from "../Redux/Slices/cartSlice";
+import { addToCart } from "../redux/Slices/cartSlice";
 
 const MenuItemCard = ({ data }) => {
   const { name, price, description, imageId, defaultPrice } = data?.card?.info;
