@@ -20,10 +20,10 @@ const SearchRestaurant = ({ handleFilter, filterRes }) => {
       <input
         type="search"
         placeholder="Search restaurants"
-        className="w-[40rem] box-border rounded-l-lg bg-white shadow-md px-12 py-3 border border-gray-600 border-r-0 text-xl font-normal text-black"
+        className="w-56 px-8 py-2 text-sm md:w-[40rem] box-border rounded-l-lg bg-white shadow-md md:px-12 md:py-3 border border-gray-600 border-r-0 md:text-xl font-normal text-black"
         onChange={handleInputChange}
       />
-      <button className="text-xl box-border border border-gray-600 font-semibold bg-orange-600 rounded-r-lg shadow-md text-white px-6 py-3 ml-[-4px] cursor-pointer outline-none"
+      <button className="text-sm px-4 py-2 md:text-xl box-border border border-gray-600 font-semibold bg-orange-600 rounded-r-lg shadow-md text-white md:px-6 md:py-3 ml-[-4px] cursor-pointer outline-none"
        onClick={handleSearchSubmit}> Search </button>
     </div>
   );
