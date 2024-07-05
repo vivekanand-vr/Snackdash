@@ -3,20 +3,21 @@ import burger from "../assets/img/burger-image.png";
 const About = () => {
   return (
     <div className="min-h-screen w-full">
-      <div className="flex flex-wrap mx-4 my-10 space-x-10">
+      <div className="flex flex-wrap mx-4 my-10">
         
-        <div className="flex flex-wrap mt-20 ml-40 flex-col justify-start items-start overflow-hidden">
-            <h1 className="text-[80px] text-red-500">
-              Welcome to the world of <br />
-              <span className="bg-red-600 px-10 pb-5 rounded-lg text-white">Tasty & Fresh Food</span>
+        <div className="flex flex-wrap flex-col justify-center items-start overflow-hidden md:mt-20 md:ml-40">
+            <h1 className="text-3xl text-red-600 md:text-[80px]">
+              Welcome to the world of 
             </h1>
-            <h4 className="text-2xl mt-6 ml-12 italic text-light items-center">
-              "Better you will feel if you eat a Snack<span className="text-red-600">Dash</span> healthy
-              meal"
-            </h4>
+            <h1 className="mt-2 px-2 pb-1 text-3xl bg-red-600 rounded-lg text-white md:text-[80px] md:px-6 md:py-10 md:mt-10">
+              Tasty & Fresh Food
+            </h1>
         </div>
-        <img src={burger} alt="Burger Image" />
-        
+        <img className="mt-6 md:ml-10" src={burger} alt="Burger Image" />
+        <h4 className="text-2xl mt-4 ml-4 italic text-light items-center md:text-4xl md:ml-40">
+              Better you will feel if you eat a Snack<span className="text-red-600 font-semibold">Dash</span> tasty
+              meal
+        </h4>
       </div>
     </div>
   );
