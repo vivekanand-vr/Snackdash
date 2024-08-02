@@ -18,10 +18,18 @@
 - **API Integration** : Integrated with Swiggy's API for real-time data fetching.
 
  ## Snapshots
-
-![Screenshot 2024-07-02 134045](https://github.com/vivekanand-vr/Snackdash/assets/116813193/cd2cac0f-9d99-48df-a274-19ab9562a818) <br> </br>
-![Screenshot 2024-07-02 134105](https://github.com/vivekanand-vr/Snackdash/assets/116813193/44e38487-bea1-4adf-a2cf-1c837dc44ae1) <br> </br>
-![Screenshot 2024-07-02 134144](https://github.com/vivekanand-vr/Snackdash/assets/116813193/ac6d0677-c1f4-49d1-bfa0-7eb2cf4e9465) <br> </br>
-![Screenshot 2024-07-02 134204](https://github.com/vivekanand-vr/Snackdash/assets/116813193/663df0ef-b282-428b-afd0-56e0ab0bdccf) <br> </br>
-![Screenshot 2024-07-02 134218](https://github.com/vivekanand-vr/Snackdash/assets/116813193/10e8249f-a863-4cb5-b4b4-9d75afeb996e) <br> </br>
+<table>
+  <tr>
+    <td><img src="https://github.com/user-attachments/assets/68f4c0ee-e592-466b-967e-f7ce3f4ed218" alt="Web Image 1" width="500"></td>
+    <td><img src="https://github.com/user-attachments/assets/f769da5d-eae3-43f1-ae9c-dacc4b3eb281" alt="Web Image 2" width="500"></td>
+  </tr>
+   <tr>
+    <td><img src="https://github.com/user-attachments/assets/143b59ce-5991-45ce-836f-f0204694a251" alt="Web Image 7" width="500"></td>
+    <td><img src="https://github.com/user-attachments/assets/566527b7-6c3b-4603-ba69-93d3153e66eb" alt="Web Image 8" width="500"></td>
+  </tr>
+  <tr>
+    <td><img src="https://github.com/user-attachments/assets/9b582228-903a-4ad1-b2b7-616729fc3b12" alt="Web Image 3" width="500"></td>
+    <td><img src="https://github.com/user-attachments/assets/dd155bda-52f7-472a-9e1b-867aaf3fa50a" alt="Web Image 4" width="500"></td>
+  </tr>
+</table>
 
