@@ -18,6 +18,8 @@
   },
   "homepage": "https://github.com/vivekanand-vr/snackdash#readme",
   "devDependencies": {
+    "@babel/preset-env": "^7.25.3",
+    "@babel/preset-react": "^7.24.7",
     "autoprefixer": "^10.4.19",
     "parcel": "^2.8.2",
     "postcss": "^8.4.38",

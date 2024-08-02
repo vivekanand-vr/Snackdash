@@ -1,8 +1,9 @@
 import { useState } from "react";
-import Logo from "../assets/img/logo.png";
 import { Link } from "react-router-dom";
-import useIsOnline from "../hooks/useIsOnline";
 import { useSelector } from "react-redux";
+import Logo from "../Assets/logo.png";
+import useIsOnline from "../hooks/useIsOnline";
+
 
 const Header = () => {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
@@ -15,7 +16,7 @@ const Header = () => {
 
   return (
     <header
-      className={`relative border-2 border-b-cyan-700 bg-cyan-100 text-black px-4 py-2 ${
+      className={`relative border-2 border-b-cyan-700 bg-emerald-100 text-black px-4 py-2 ${
         !isOnline ? "pointer-events-none" : ""
       }`}
     >

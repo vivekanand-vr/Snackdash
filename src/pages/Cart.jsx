@@ -1,10 +1,19 @@
-import { useSelector } from "react-redux";
-import CartItem from "../component/CartItem";
-import CartEmpty from "../pages/CartEmpty";
+import { useSelector, useDispatch } from "react-redux";
+import { useNavigate } from "react-router-dom";
+import { clearItems } from "../Redux/Slices/cartSlice";
+import CartItem from "../Components/CartItem";
+import CartEmpty from "../Pages/CartEmpty";
 
 const Cart = () => {
   const cartItems = useSelector((store) => store.cart.items);
   const price = useSelector((store) => store.cart.totalPrice);
+  const navigate = useNavigate();
+  const dispatch = useDispatch();
+
+  const handleClick = () =>{
+    dispatch(clearItems());
+    navigate("/thanks");
+  }
 
   return cartItems.length === 0 ? (
     <CartEmpty />
@@ -21,7 +30,7 @@ const Cart = () => {
 
           <div className="p-4 bg-gray-100 border-t border-gray-200 flex justify-between">
             <p className="text-lg font-semibold">Total: {price}</p>
-            <button className="bg-green-500 text-white px-4 py-2 rounded-lg">
+            <button onClick={handleClick} className="bg-red-800 text-white font-semibold px-4 py-2 rounded-lg">
               Checkout
             </button>
           </div>

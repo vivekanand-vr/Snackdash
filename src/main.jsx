@@ -4,17 +4,16 @@ import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import { Provider } from "react-redux";
 
 import App from "./App.jsx";
-import Body from "./pages/Body.jsx";
+import Body from "./Pages/Body.jsx";
 import Cart from "./pages/Cart.jsx";
-import About from "./pages/About.js";
-import RestaurantMenu from "./pages/RestaurantMenu.jsx";
-import DeliveryAndPayment from './pages/DeliveryAndPayment.jsx';
-
-import appStore from './redux/appStore.js';
+import About from "./Pages/About.js";
+import RestaurantMenu from "./Pages/RestaurantMenu.jsx";
+import ThankYou from "./Pages/Thanks.jsx";
+import appStore from './Redux/appStore.js';
 import "./index.css";
 
 // On demand Loading
-const SignIn = lazy(() => import("./pages/SignIn.jsx"));
+const SignIn = lazy(() => import("./Pages/SignIn.jsx"));
 const appRouter = createBrowserRouter([
   {
     path: "/",
@@ -33,8 +32,8 @@ const appRouter = createBrowserRouter([
         ),
       },
       {
-        path: "/delivery-payments",
-        element: <DeliveryAndPayment />,
+        path: "/thanks",
+        element: <ThankYou />,
       },
       {
         path: "/about-us",

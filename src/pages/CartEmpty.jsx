@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import cartEmptyImg from "../assets/img/cooking.png";
+import cartEmptyImg from "../Assets/cooking.png";
 
 const CartEmpty = () => {
   return (
@@ -16,7 +16,7 @@ const CartEmpty = () => {
       <Link to="/">
         <button
           type="button"
-          className="bg-orange-500 text-white font-semibold px-5 rounded-md cursor-pointer py-2 hover:bg-orange-400"
+          className="bg-red-800 text-white font-semibold px-5 rounded-md cursor-pointer py-2 hover:bg-orange-400"
         >
           SEE RESTAURANTS NEAR YOU
         </button>

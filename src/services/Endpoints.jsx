@@ -6,6 +6,3 @@ export const API_RESTAURANTS =
 
 export const RESTAURANT_MENU =
 "https://foodfire.onrender.com/api/menu?page-type=REGULAR_MENU&complete-menu=true&lat=21.1702401&lng=72.83106070000001&&submitAction=ENTER&restaurantId=";
-
-export const DELIVERY_ICON =
-  "https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_40,h_40/v1648635511/Delivery_fee_new_cjxumu";

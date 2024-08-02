@@ -1,4 +1,4 @@
-import { removeFromCart } from "../redux/Slices/cartSlice";
+import { removeFromCart } from "../Redux/Slices/cartSlice";
 import { RESTAURANT_IMG } from "../services/Endpoints";
 import { useDispatch } from "react-redux";
 

@@ -1,4 +1,4 @@
-import simile from "../assets/img/smiling.svg";
+import simile from "../Assets/smiling.svg";
 import { useFormik } from "formik";
 import * as Yup from "yup";
 

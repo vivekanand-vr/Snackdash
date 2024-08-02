@@ -1,19 +1,17 @@
-import RestaurantCard from "../component/RestaurantCard";
-import SearchRestaurant from "../component/SearchRestaurant";
-import Shimmer from "../component/Shimmer";
+import RestaurantCard from "../Components/RestaurantCard";
+import SearchRestaurant from "../Components/SearchRestaurant";
+import Shimmer from "../Components/Shimmer";
 import { Link } from "react-router-dom";
-import useRestaurantAndFilter from "../hooks/useRestaurantAndFilter";
-import InternetConnection from "../component/InternetConeection";
-import useIsOnline from "../hooks/useIsOnline";
-import withRestaurantOffer from "../component/hoc/withRestuarntOffer";
+import useRestaurantAndFilter from "../Hooks/useRestaurantAndFilter";
+import InternetConnection from "../Components/InternetConeection";
+import useIsOnline from "../Hooks/useIsOnline";
+import withRestaurantOffer from "../Components/hoc/withRestuarntOffer";
 
 const Body = () => {
   const { restaurants, filterRestaurant, setRestaurants } =
     useRestaurantAndFilter();
   const isOnline = useIsOnline();
   const RestaurantWithOffer = withRestaurantOffer(RestaurantCard);
-
-  console.log(restaurants);
 
   return (
     <div
@@ -32,8 +30,8 @@ const Body = () => {
       {restaurants.length === 0 ? (
         <Shimmer />
       ) : (
-        <div className="container">
-          <div className="w-full flex flex-wrap p-5 gap-12">
+        <div>
+          <div className="flex flex-wrap gap-6 justify-center md:justify-normal">
             {restaurants?.map((restaurant) => (
               <Link
                 to={"/restaurant-menu/" + restaurant?.info?.id}
